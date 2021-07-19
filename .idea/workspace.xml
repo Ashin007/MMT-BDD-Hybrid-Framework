@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9edb688b-589e-438e-b3c3-06595935cd43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MMT BDD Hybrid Framework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/util/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/config/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MainStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testrunners/MainTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/maintest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/config/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testrunners/MainTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrunners/MainTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cucumber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/maintest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/maintest.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,72 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ashin\Documents\Software Testing\GitHubProjects\MMT BDD Hybrid Framework\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTestRunner">
+    <configuration name="Feature: maintest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/maintest.feature" />
+      <option name="GLUE" value="stepdefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MMT BDD Hybrid Framework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: maintest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Home Page Default login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/maintest.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MMT BDD Hybrid Framework" />
+      <option name="NAME_FILTER" value="^Home Page Default login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Home Page Default login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Home Page Default login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MMT BDD Hybrid Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testrunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testrunners" />
+      <option name="MAIN_CLASS_NAME" value="testrunners.MainTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTestRunner" />
+        <item itemvalue="Cucumber java.Feature: maintest" />
+        <item itemvalue="Cucumber java.Scenario: Home Page Default login" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,5 +117,31 @@
       <updated>1626627143210</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="572" key="GridCell.Tab.0.bottom" timestamp="1626721115671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
+    <state width="1493" height="572" key="GridCell.Tab.0.center" timestamp="1626721115671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
+    <state width="1493" height="572" key="GridCell.Tab.0.left" timestamp="1626721115671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
+    <state width="1493" height="572" key="GridCell.Tab.0.right" timestamp="1626721115671">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="572" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
+    <state x="521" y="354" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1626634991865">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="521" y="354" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1626634991865" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1626634004649">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1626634004649" />
   </component>
 </project>

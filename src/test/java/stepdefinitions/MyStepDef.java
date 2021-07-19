@@ -1,30 +1,41 @@
 package stepdefinitions;
 
+import com.factory.DriverFactory;
+import com.pages.HomePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class MyStepDef {
+
+    HomePage homePage;
+
     @Given("User is on landing page")
     public void userIsOnLandingPage() {
+        homePage = new HomePage(DriverFactory.getWebDriver());
+        System.out.println(homePage.getLandingPageName());
     }
 
     @When("User click on flight")
     public void userClickOnFlight() {
+        homePage.clickOnFlightLink();
     }
 
     @And("click on round trip")
     public void clickOnRoundTrip() {
+        homePage.clickOnRoundTrip();
     }
 
     @Then("Select from: {string} and to:{string}")
     public void selectFromAndToBangalore(String from, String to) {
+        homePage.enterFromPlace(from);
+        homePage.enterToPlace(to);
     }
 
     @And("Select departure date:today")
     public void selectDepartureDateToday() {
-
+        homePage.selectDepartureDateAsToday();
     }
 
     @And("return date: after {int} days")

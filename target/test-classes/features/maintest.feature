@@ -1,8 +1,16 @@
-Feature: Login flipkart
-  The test case is all about login into flipkart application with email and password and check the user name is properly showing on home page.
-  Example:Login onto application
-  Scenario: Home Page Default login
+Feature: Make My Trip Application Assignment Test
+  Scenario: Price Validation
     Given User is on landing page
-    When User login into application with username as "Ashin" and password as 123
-    Then Home page is populated result 200
-    And Cards are shown properly 12
+    When User click on flight
+    And click on round trip
+    Then Select from: "Delhi" and to:"Bangalore"
+    And Select departure date:today
+    And return date: after 7 days
+    Then click on search
+    Then print total number of records of departure flight
+    And print return flight list
+    Then select non-stop and 1 stop filter options
+    And print total number of departure flight and return flight
+    Then select radio button of top 10 options of departure flight and return flight
+    And verify the same departure flight price and return flight price are getting reflected in bottom page
+    Then verify the correct total amount is getting reflected correctly
