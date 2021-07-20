@@ -21,11 +21,16 @@ public class HomePage {
 
     By roundTripElement = By.cssSelector("li[data-cy='roundTrip']");
 
+    By searchElement = By.xpath("//a[@class='primaryBtn font24 latoBold widgetSearchBtn ']");
+
     public HomePage(WebDriver driver){
         this.driver = driver;
     }
 
     public String getLandingPageName(){
+
+        avoidLoginSuggestion();
+
         return driver.getTitle();
     }
 
@@ -42,6 +47,10 @@ public class HomePage {
         driver.findElement(toElement).sendKeys(toPlace);
     }
 
+    public SearchResultPage clickOnSearch(){
+        driver.findElement(searchElement).click();
+        return new SearchResultPage(driver);
+    }
     public void selectDepartureDateAsToday(){
 
         DateTimeFormatter format =
@@ -64,5 +73,16 @@ public class HomePage {
 
 
 
+    }
+
+    public void avoidLoginSuggestion(){
+        if(driver.findElements(By.xpath("//div[@data-cy='googleLogin']")).size()>0){
+            System.out.println(driver.findElements(By.xpath("//div[@data-cy='googleLogin']")).size());
+            System.out.println("true");
+            driver.navigate().refresh();
+        }
+        else{
+            System.out.println("okay");
+        }
     }
 }

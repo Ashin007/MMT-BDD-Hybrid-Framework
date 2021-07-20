@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9edb688b-589e-438e-b3c3-06595935cd43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/config/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testrunners/MainTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testrunners/MainTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cucumber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/maintest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/maintest.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,22 +114,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="572" key="GridCell.Tab.0.bottom" timestamp="1626721115671">
+    <state width="1493" height="338" key="GridCell.Tab.0.bottom" timestamp="1626803975599">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="572" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
-    <state width="1493" height="572" key="GridCell.Tab.0.center" timestamp="1626721115671">
+    <state width="1493" height="338" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1626803975599" />
+    <state width="1493" height="338" key="GridCell.Tab.0.center" timestamp="1626803975599">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="572" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
-    <state width="1493" height="572" key="GridCell.Tab.0.left" timestamp="1626721115671">
+    <state width="1493" height="338" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1626803975599" />
+    <state width="1493" height="338" key="GridCell.Tab.0.left" timestamp="1626803975599">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="572" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
-    <state width="1493" height="572" key="GridCell.Tab.0.right" timestamp="1626721115671">
+    <state width="1493" height="338" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1626803975599" />
+    <state width="1493" height="338" key="GridCell.Tab.0.right" timestamp="1626803975599">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="572" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1626721115671" />
+    <state width="1493" height="338" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1626803975599" />
     <state x="521" y="354" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1626634991865">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

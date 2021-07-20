@@ -2,14 +2,17 @@ package stepdefinitions;
 
 import com.factory.DriverFactory;
 import com.pages.HomePage;
+import com.pages.SearchResultPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class MyStepDef {
 
     HomePage homePage;
+    SearchResultPage resultPage;
 
     @Given("User is on landing page")
     public void userIsOnLandingPage() {
@@ -44,15 +47,21 @@ public class MyStepDef {
 
     @Then("click on search")
     public void clickOnSearch() {
+        resultPage = homePage.clickOnSearch();
 
     }
 
     @Then("print total number of records of departure flight")
     public void printTotalNumberOfRecordsOfDepartureFlight() {
+        resultPage.getTitle();
+        Assert.assertFalse(resultPage.isResultEmpty());
     }
 
     @And("print return flight list")
     public void printReturnFlightList() {
+
+
+
     }
 
     @Then("select non-stop and {int} stop filter options")
