@@ -9,6 +9,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
+import java.util.List;
+
 public class MyStepDef {
 
     HomePage homePage;
@@ -55,21 +57,60 @@ public class MyStepDef {
     public void printTotalNumberOfRecordsOfDepartureFlight() {
         resultPage.getTitle();
         Assert.assertFalse(resultPage.isResultEmpty());
+        List<String> flightList = resultPage.getDepartureFlights();
+        if(!flightList.isEmpty()){
+            System.out.println("----Departure Flights----");
+            for (String flight:flightList){
+                System.out.println(flight);
+            }
+        }
+
     }
 
     @And("print return flight list")
     public void printReturnFlightList() {
 
+        Assert.assertFalse(resultPage.isResultEmpty());
+        List<String> flightList = resultPage.getReturnFlights();
+        if(!flightList.isEmpty()){
+            System.out.println("----Return Flights----");
+            for (String flight:flightList){
+                System.out.println(flight);
+            }
+        }
+
+
 
 
     }
 
-    @Then("select non-stop and {int} stop filter options")
-    public void selectNonStopAndStopFilterOptions(int arg0) {
+    @Then("select non-stop filter options")
+    public void selectNonStopFilterOptions() {
+        resultPage.clickOnNonStop();
+        System.out.println("Clicked on non stop filter");
+
     }
 
     @And("print total number of departure flight and return flight")
     public void printTotalNumberOfDepartureFlightAndReturnFlight() {
+        Assert.assertFalse(resultPage.isResultEmpty());
+        List<String> returnFlightList = resultPage.getReturnFlights();
+        if(!returnFlightList.isEmpty()){
+            System.out.println("----Return Flights----");
+            for (String flight:returnFlightList){
+                System.out.println(flight);
+            }
+        }
+
+        Assert.assertFalse(resultPage.isResultEmpty());
+        List<String> departureFlightList = resultPage.getDepartureFlights();
+        if(!departureFlightList.isEmpty()){
+            System.out.println("----Departure Flights----");
+            for (String flight:departureFlightList){
+                System.out.println(flight);
+            }
+        }
+
     }
 
     @Then("select radio button of top {int} options of departure flight and return flight")

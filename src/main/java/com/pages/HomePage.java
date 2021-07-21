@@ -64,7 +64,10 @@ public class HomePage {
 
 
         driver.findElement(departureTab).click();
-        driver.findElement(By.xpath("//div[@class='DayPicker-Day DayPicker-Day--today']")).click();
+        //today
+        //driver.findElement(By.xpath("//div[@class='DayPicker-Day DayPicker-Day--today']")).click();
+        //DayPicker-Day DayPicker-Day--start DayPicker-Day--selected
+        driver.findElement(By.xpath("//div[@class='DayPicker-Day DayPicker-Day--start DayPicker-Day--selected']")).click();
         System.out.println("//div[@class='DayPicker-Day' and @aria-label='"+nnw+"']");
         //System.out.println(driver.findElement(currentDate).getText());
         //driver.findElement(By.xpath("//div[@class='DayPicker-Day' and @aria-label='"+nnw+"']")).click();
@@ -77,9 +80,7 @@ public class HomePage {
 
     public void avoidLoginSuggestion(){
         if(driver.findElements(By.xpath("//div[@data-cy='googleLogin']")).size()>0){
-            System.out.println(driver.findElements(By.xpath("//div[@data-cy='googleLogin']")).size());
-            System.out.println("true");
-            driver.navigate().refresh();
+            driver.findElement(By.xpath("//div[@data-cy='outsideModal']")).click();
         }
         else{
             System.out.println("okay");

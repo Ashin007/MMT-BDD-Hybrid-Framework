@@ -9,7 +9,7 @@ Feature: Make My Trip Application Assignment Test
     Then click on search
     Then print total number of records of departure flight
     And print return flight list
-    Then select non-stop and 1 stop filter options
+    Then select non-stop filter options
     And print total number of departure flight and return flight
     Then select radio button of top 10 options of departure flight and return flight
     And verify the same departure flight price and return flight price are getting reflected in bottom page

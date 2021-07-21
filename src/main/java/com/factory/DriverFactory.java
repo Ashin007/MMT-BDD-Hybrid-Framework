@@ -3,6 +3,7 @@ package com.factory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -15,8 +16,10 @@ public class DriverFactory {
     public WebDriver initWebDriver(String browser){
         if(browser.equals("chrome")){
             System.out.println("Chrome");
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--disable-notifications");
             WebDriverManager.chromedriver().setup();
-            driverThreadLocal.set(new ChromeDriver());
+            driverThreadLocal.set(new ChromeDriver(options));
         }
         else if (browser.equals("firefox")){
             System.out.println("firefox");
