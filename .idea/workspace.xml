@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9edb688b-589e-438e-b3c3-06595935cd43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/factory/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pages/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pages/SearchResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/MyStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/maintest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/maintest.feature" afterDir="false" />
-    </list>
+    <list default="true" id="9edb688b-589e-438e-b3c3-06595935cd43" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,22 +128,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="503" y="194" key="EnvironmentVariablesDialog/0.0.1536.864@0.0.1536.864" timestamp="1626891485328" />
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom" timestamp="1626895300520">
+    <state width="1493" height="20" key="GridCell.Tab.0.bottom" timestamp="1626896003619">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1626895300520" />
-    <state width="1493" height="157" key="GridCell.Tab.0.center" timestamp="1626895300520">
+    <state width="1493" height="20" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1626896003619" />
+    <state width="1493" height="20" key="GridCell.Tab.0.center" timestamp="1626896003619">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1626895300520" />
-    <state width="1493" height="157" key="GridCell.Tab.0.left" timestamp="1626895300519">
+    <state width="1493" height="20" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1626896003619" />
+    <state width="1493" height="20" key="GridCell.Tab.0.left" timestamp="1626896003619">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1626895300519" />
-    <state width="1493" height="157" key="GridCell.Tab.0.right" timestamp="1626895300520">
+    <state width="1493" height="20" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1626896003619" />
+    <state width="1493" height="20" key="GridCell.Tab.0.right" timestamp="1626896003619">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="157" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1626895300520" />
+    <state width="1493" height="20" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1626896003619" />
     <state x="521" y="354" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1626634991865">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
