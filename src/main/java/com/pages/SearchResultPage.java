@@ -1,6 +1,8 @@
 package com.pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,11 +10,14 @@ import java.util.List;
 public class SearchResultPage {
 
     WebDriver driver;
+    JavascriptExecutor jse;
     By searchResultErrorElement = By.id("fullpage-error");
     String flightPartA = "//div[@class='paneView'][";
     String flightPartB = "]/div[2]/div/label/div/div/span";
 
     By nonStopFilterElement = By.xpath("//span[@class='filterName' and @title='Non Stop']/parent::span/parent::div/span[@class='customCheckbox'][1]");
+    By selectTop10DepartureFlight = By.xpath("//div[@class='paneView'][1]/div[2]/div/label/div/div[2]/div[2]/span/span");
+    By selectTop10ReturnFlight = By.xpath("//div[@class='paneView'][2]/div[2]/div/label/div/div[2]/div[2]/span/span");
 
 
 
@@ -25,6 +30,7 @@ public class SearchResultPage {
 
     public SearchResultPage(WebDriver driver){
         this.driver = driver;
+        jse = (JavascriptExecutor)driver;
     }
 
     public void getTitle(){
@@ -45,7 +51,7 @@ public class SearchResultPage {
         String flight_xpath = flightPartA+tabNumber+flightPartB;
         By flightElement = By.xpath(flight_xpath);
         List<String> flightNameList = new ArrayList<String>();
-        JavascriptExecutor jse = (JavascriptExecutor)driver;
+
         jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 
         List<WebElement> flightList = driver.findElements(flightElement);
@@ -60,5 +66,20 @@ public class SearchResultPage {
 
     public void clickOnNonStop(){
         driver.findElement(nonStopFilterElement).click();
+    }
+
+    public void clickOnTopDepartureFlight(int topFlightList){
+        WebElement element = driver.findElements(selectTop10DepartureFlight).get(topFlightList);
+        clickOnFlightRadioButton(element);
+
+    }
+    public void clickOnTopReturnFlight(int topFlightList){
+        WebElement element = driver.findElements(selectTop10ReturnFlight).get(topFlightList);
+        clickOnFlightRadioButton(element);
+    }
+
+    private void clickOnFlightRadioButton(WebElement element) {
+        jse.executeScript("arguments[0].scrollIntoView(true);", element);
+        element.click();
     }
 }

@@ -55,30 +55,30 @@ public class MyStepDef {
 
     @Then("print total number of records of departure flight")
     public void printTotalNumberOfRecordsOfDepartureFlight() {
-        resultPage.getTitle();
-        Assert.assertFalse(resultPage.isResultEmpty());
-        List<String> flightList = resultPage.getDepartureFlights();
-        if(!flightList.isEmpty()){
-            System.out.println("----Departure Flights----");
-            for (String flight:flightList){
-                System.out.println(flight);
-            }
-        }
+//        resultPage.getTitle();
+//        Assert.assertFalse(resultPage.isResultEmpty());
+//        List<String> flightList = resultPage.getDepartureFlights();
+//        if(!flightList.isEmpty()){
+//            System.out.println("----Departure Flights----");
+//            for (String flight:flightList){
+//                System.out.println(flight);
+//            }
+//        }
 
     }
 
     @And("print return flight list")
     public void printReturnFlightList() {
 
-        Assert.assertFalse(resultPage.isResultEmpty());
-        List<String> flightList = resultPage.getReturnFlights();
-        if(!flightList.isEmpty()){
-            System.out.println("----Return Flights----");
-            for (String flight:flightList){
-                System.out.println(flight);
-            }
-        }
-
+//        Assert.assertFalse(resultPage.isResultEmpty());
+//        List<String> flightList = resultPage.getReturnFlights();
+//        if(!flightList.isEmpty()){
+//            System.out.println("----Return Flights----");
+//            for (String flight:flightList){
+//                System.out.println(flight);
+//            }
+//        }
+//
 
 
 
@@ -93,28 +93,31 @@ public class MyStepDef {
 
     @And("print total number of departure flight and return flight")
     public void printTotalNumberOfDepartureFlightAndReturnFlight() {
-        Assert.assertFalse(resultPage.isResultEmpty());
-        List<String> returnFlightList = resultPage.getReturnFlights();
-        if(!returnFlightList.isEmpty()){
-            System.out.println("----Return Flights----");
-            for (String flight:returnFlightList){
-                System.out.println(flight);
-            }
-        }
-
-        Assert.assertFalse(resultPage.isResultEmpty());
-        List<String> departureFlightList = resultPage.getDepartureFlights();
-        if(!departureFlightList.isEmpty()){
-            System.out.println("----Departure Flights----");
-            for (String flight:departureFlightList){
-                System.out.println(flight);
-            }
-        }
-
+//        Assert.assertFalse(resultPage.isResultEmpty());
+//        List<String> returnFlightList = resultPage.getReturnFlights();
+//        if(!returnFlightList.isEmpty()){
+//            System.out.println("----Return Flights----");
+//            for (String flight:returnFlightList){
+//                System.out.println(flight);
+//            }
+//        }
+//
+//        Assert.assertFalse(resultPage.isResultEmpty());
+//        List<String> departureFlightList = resultPage.getDepartureFlights();
+//        if(!departureFlightList.isEmpty()){
+//            System.out.println("----Departure Flights----");
+//            for (String flight:departureFlightList){
+//                System.out.println(flight);
+//            }
+//        }
+//
     }
 
     @Then("select radio button of top {int} options of departure flight and return flight")
-    public void selectRadioButtonOfTopOptionsOfDepartureFlightAndReturnFlight(int arg0) {
+    public void selectRadioButtonOfTopOptionsOfDepartureFlightAndReturnFlight(int topFlight) {
+        resultPage.clickOnTopDepartureFlight(topFlight);
+        resultPage.clickOnTopReturnFlight(topFlight);
+
     }
 
     @And("verify the same departure flight price and return flight price are getting reflected in bottom page")
